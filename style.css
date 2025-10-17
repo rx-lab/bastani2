@@ -1,0 +1,119 @@
+body {
+    background-image: url('img/ice.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-attachment: fixed; 
+    position: relative;
+    font-family: sans-serif;
+    overflow-y: hidden;
+}
+.nav2{
+  display: none;
+  position: absolute;
+  top: 100%; /* دقیقا زیر منوی اصلی */
+  right: 0;
+  background: rgba(255, 255, 255, 0.271);
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 1000;
+
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+    padding: 10px 10px 0;
+    position: relative; 
+    z-index: 10; 
+    color: white;
+    margin-top: -10px;
+}
+
+.nav li {
+    list-style: none;
+    margin-top: 5px;
+    margin-right: 20px;
+    color: white;
+}
+
+.nav li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 10px;
+    display: inline-block; /* برای اعمال padding و hover */
+    transition: all 0.5s ease; /* transition برای همه خواص */
+}
+
+.nav li a:hover{
+    color: #906652; /* رنگ قهوه‌ای ملایم */
+    background-color: rgb(255, 255, 255); /* پس‌زمینه شفاف سفید */
+    border-radius: 5px;
+}
+
+/* اطمینان از بازگشت به حالت اولیه */
+.nav li a {
+    backface-visibility: hidden; /* برای جلوگیری از پرش */
+}
+
+.img1 {
+    position: relative;
+    margin-right: 450px;
+    margin-top: -50px;
+    z-index: 2;
+}
+
+.img2 {
+    width: 1400px;
+    height: auto;
+    margin-top: -700px;
+    margin-right: -50px;
+    z-index: 1;
+    opacity: 0;
+ transition: all 0.5s ease;
+    position: relative; /* برای کنترل لایه */
+}
+
+h1 {
+    margin-right: 1050px;
+    margin-top: -600px;
+    color: white;
+    z-index: 3; /* بالای همه قرار بگیره */
+}
+
+p {
+    width: 400px;
+    height: 200px;
+    margin-right: 1050px;
+    margin-top: 10px;
+    color: white;
+    z-index: 3; /* بالای همه قرار بگیره */
+}
+.up, .down {
+  position: fixed;
+  right: 20px;
+  top: 100px;
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  color: white;
+  background-color: #ffffff6e;
+  border: none;
+  font-size: large;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.up { top: 500px; }
+.down { top: 600px; }
+.rotate-show {
+  opacity: 1;
+  transform: rotate(45deg);
+}
+.logo{
+  margin-right: 1350px;
+  margin-top: -100px;
+  width: 150px;
+  height: auto;
+
+}
